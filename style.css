@@ -138,7 +138,7 @@ nav .right_nav{
     width: 100%;
     padding: 50px;
     height: 829px;
-    background:url('images/main_img.png');
+    background:url('/images/main_img.png');
     background-position: center;
     background-repeat: no-repeat;
     /* background-color: black; */
@@ -254,21 +254,25 @@ nav .right_nav{
     gap: 20px;
     width: 50%;
     padding: 50px;
-    align-items: end;
+    align-items: start;
 }
 .editor_text .text_box{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    gap: 30px;
 }
 
-/* .text_box */
+
+.text_box img{
+    width: 100px;
+}
 
 .text_box div{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 70%;
+    width: 80%;
 }
 .text_box div p{
     color: rgba(50, 50, 50, 1);
@@ -297,7 +301,7 @@ nav .right_nav{
 .testimonial{
     height: 786px;
     width: 100%;
-    background:url('images/testmonials_bg.png');
+    background:url('/images/testmonials_bg.png');
     background-repeat:no-repeat;
     background-position: center;
     background-size:cover ;
@@ -360,7 +364,7 @@ nav .right_nav{
     justify-content: space-between;
     padding: 50px;
     flex-direction: column;
-    background:url(images/pricing_bg.png) ;
+    background:url(/images/pricing_bg.png) ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -672,6 +676,12 @@ nav ul{
     nav .right_nav ul li a.active{
         border-left: 8px solid var(--main-color);
     }
+
+    nav .right_nav ul li a:focus{
+        border-left: 8px solid var(--main-color);
+
+    }
+
     .pricing_container{
         display: grid;
         grid-template-columns: 1fr;
