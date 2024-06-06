@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline:none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    transition: .3s all  !important;
+}
+
+:root{
+    --main-color: rgba(141, 129, 172, 1);
+    --hover-color-text: rgba(255, 255, 255, 1);
+    --side-color: rgba(132, 142, 151, 1); 
+    --responsive-nav-color:rgba(39, 38, 42, 1); 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+/* ====== NAVBAR ====== */
+
+
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    z-index: 999;
+}
+
+
+nav .logo_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    width: 164px;
+    height: 41px;
+}
+
+nav .logo_side:hover{
+    color: var(--hover-color-text);
+}
+
+
+
+.logo_side span{
+    width: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+}
+
+.logo_side .logo_img_div{
+    width: 43px;
+    height: 41px;
+    background:url('images/logoXhover.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav .logo_side:hover .logo_img_div{
+    background: url('images/logo.png');
+}
+
+
+
+
+nav .right_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.right_nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+.right_nav ul li a{
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.right_nav ul li a:hover{
+    color: var(--hover-color-text);
+}
+
+.right_nav .btn{
+    width: 145px;
+    height: 37px;
+    border-radius: 40px;
+    cursor: pointer;
+    color: var(--hover-color-text);
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.right_nav .btn:hover{
+    background-color: var(--hover-color-text);
+    color:var(--main-color) ;
+}
+
+
+/* ========== MAIN CONTAINER ========== */
+
+
+
+.main_container{
+    width: 100%;
+    padding: 50px;
+    height: 829px;
+    background:url('/images/main_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: black; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.main_container h1{
+    color: var(--hover-color-text);
+    font-size: 82px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main_container .p1{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 30px;
+    font-family: "Lato" , sans-serif;
+}
+.main_container .p2{
+    text-align: center;
+    color : var(--side-color);
+}
+
+
+
+
+
+.download_btn{
+    color: aliceblue;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -68px;
+    height: 104px;
+    left: 50%;
+    transform: translate(-50% , 0%);
+}
+.download_btn button{
+    background-color: var(--main-color);
+    color: var(--hover-color-text);
+    width: 390px;
+    height:62px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight:700;
+    border: none;
+    border: 2px solid var(--main-color);
+}
+.download_btn button:hover{
+    background-color: var(--hover-color-text);
+    color: var(--main-color);
+}
+.download_btn p{
+    color: var(--side-color);
+}
+
+
+
+.under_main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 100px;
+    gap: 30px;
+}
+
+.under_main h1{
+    color: rgba(99, 92, 115, 1);
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.under_main p{
+    text-align: center;
+    width: 60%;
+    font-family: "Lato" , sans-serif;
+    color: rgba(50, 50, 50, 1);
+}
+
+
+
+/* ========== EDITOR SIDE ========== */
+
+.editor_container{
+    display: flex;
+    background-color: rgba(244, 244, 244, 1);
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.editor_container h1{
+    width: 100%;
+}
+
+.editor_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    padding: 50px;
+    align-items: end;
+}
+.editor_text .text_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .text_box */
+
+.text_box div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+.text_box div p{
+    color: rgba(50, 50, 50, 1);
+}
+.text_box div span{
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.editor_img{
+    width: 700px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+}
+.editor_img h1 {
+    color: var(--main-color);
+    width: 100%;
+    text-align: center;
+}
+.editor_img img{
+    width: 700px;
+}
+
+.testimonial{
+    height: 786px;
+    width: 100%;
+    background:url('/images/testmonials_bg.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover ;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.testimonial h1{
+    color: var(--hover-color-text);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.test_grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3 , 1fr) ;
+    gap: 80px;
+    place-items: center;
+}
+.testimonial .under_p{
+    text-align: center;
+    font-family: "Lato" , sans-serif;
+    color: var(--hover-color-text);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.under_p::before{
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: var(--hover-color-text);
+    content: '';
+    bottom: -10px;
+}
+.test_box{
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    color: var(--hover-color-text);
+    font-family: "Lato" , sans-serif;
+}
+
+/* === PRICING ===  */
+
+.pricing{
+    width: 100%;
+    height: 854px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-direction: column;
+    background:url(/images/pricing_bg.png) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -12px;
+}
+
+.pricing .price_header{
+    color: var(--hover-color-text);
+    font-size: 48px;
+}
+
+
+.pricing_container{
+    display: grid;
+    gap: 10px;
+    place-items: center;
+    grid-template-columns: 260px 260px 299px 260px ;
+
+
+}
+
+.pricing_container .pricing_box{
+    width: 260px;
+    height: 460px;
+    background: rgba(255, 255, 255, .11);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:30px ;
+    color: var(--hover-color-text);
+    text-align: center;
+}
+
+.pricing_box button , .pricing_box_active button{
+    width: 163px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, .15);
+    font-size: 15px;
+    color: var(--hover-color-text);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.pricing_box div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricing_box div::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: var(--main-color);
+    bottom: -20px;
+
+}
+
+
+.pricing_box h1{
+    width: 100%;
+    height: 97px;
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.pricing_box .price{
+    font-size: 60px;
+}
+
+.pricing_container .pricing_box_active{
+    width: 299px;
+    height: 560px;
+    background:rgba(70, 48, 72, .84);
+    color: var(--hover-color-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:30px ;
+    color: var(--hover-color-text);
+    text-align: center;
+}
+
+.pricing_box_active h1{
+    width: 100%;
+    height: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, .11) ;
+    font-weight: 400;
+}
+
+.pricing_box_active .price{
+    font-size: 60px;
+}
+.pricing_box_active div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pricing_box_active div::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: var(--main-color);
+    bottom: -20px;
+}
+
+
+.menu_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hover-color-text);
+    font-size: 26px;
+    display: none;
+    width: 40px;
+}
+.menu_side i{
+    cursor: pointer;
+}
+
+
+
+/* ======== RESPONSIVE MEDIA QUERY ======== */
+
+
+@media screen and (width > 1200px) {
+    .editor_img img{
+        width: 600px;
+    }
+    
+}
+
+@media  screen and (width < 1200px) {
+    .pricing{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .under_main h1{
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .pricing .price_header{
+        font-size: 42px;
+        text-align: center;
+    }
+    .pricing_container{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .editor_container{
+        display: flex;
+        flex-direction: column;
+        position: relative !important;
+
+    }
+    .editor_text{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .editor_img h1{
+        position: absolute;
+        top: 50px;
+        text-align: center;
+    }
+    .editor_img{
+        width: 100%;
+    }
+
+    .testimonial{
+        width: 100%;
+        height: 0%;
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .test_grid{
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: repeat(2 , 315px);
+        place-items: center; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+}
+nav{
+    padding: 20px;
+    background-color: var(--responsive-nav-color);
+    height: 118px;
+}
+
+
+nav ul{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+}
+
+.main_container h1{
+    font-size: 72px;
+}
+.main_container .p1{
+    font-size: 24px;
+}
+    .under_main h1{
+        font-size: 42px;
+    }
+    .under_main p{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+/* ======== SCREEN SIZE MAX 768PX ======== */
+
+
+@media screen and (width < 768px ) {
+    nav{
+        padding: 20px;
+        z-index: 999;
+        background-color: var(--responsive-nav-color);
+        height: 100px;
+
+    }
+    nav .logo_side{
+        width: 45px;
+    }
+    nav .logo_side span{
+        display: none;
+    }
+    nav .right_nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    nav .right_nav ul{
+        width: 80%;
+        position: absolute;
+        background-color: rgba(59, 59, 59, 1);
+        gap: 10px;
+        top: -400%;
+        height: 379px;
+        left: 50%; 
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        transform: translate(-50% , 0%);
+    }
+    nav .fa-bars-staggered , nav .fa-times{
+        display: block;
+    }
+    nav .right_nav ul li{
+        display: flex;
+        background-color: rgba(51, 51, 51, 1);
+        width: 100%;
+        height: 89px;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .right_nav ul li a{
+        font-size: 26px;
+        font-weight: 400;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .menu_side{
+        display: flex;
+    }
+    .menu_side i.fa-times{
+        display: none;
+    }
+
+    nav .right_nav ul li a.active{
+        border-left: 8px solid var(--main-color);
+    }
+    .pricing_container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main_container h1{
+        font-size: 48px;
+    }
+
+
+    .editor_img img{
+        width: 80%;
+    }
+}
+
+
+@media screen and (width < 574px){
+    .download_btn{
+        width: 100%;
+    }
+    .download_btn button{
+        width: 290px;
+        height: 45px;
+    }
+    
+    .under_main h1{
+        font-size: 26px;
+    }
+    .under_main p{
+        font-size: 14px;
+        width: 100%;
+    }
+   .editor_img h1{
+        font-size: 28px;
+    }
+    .editor_text{
+        display: flex;
+        align-items: center;
+        /* padding: 0px; */
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .editor_text .text_box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .test_box div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    .text_box span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+   .testimonial h1 , .pricing .price_header{
+        font-size: 36px;
+    }
+
+}
+
+
+@media screen and (width < 380px) {
+    .under_main img{
+        width: 240px;
+    }
+    
+}
+
+
+@media screen and (width < 330px) {
+    .main_container h1{
+        font-size: 32px;
+    }
+    
+}
+
+
+/* JS PROPERTIES  */
+
+.navbarUl.openNav{
+    top: 100px;
+}
