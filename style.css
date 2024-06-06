@@ -138,7 +138,7 @@ nav .right_nav{
     width: 100%;
     padding: 50px;
     height: 829px;
-    background:url('/images/main_img.png');
+    background:url('images/main_img.png');
     background-position: center;
     background-repeat: no-repeat;
     /* background-color: black; */
@@ -301,7 +301,7 @@ nav .right_nav{
 .testimonial{
     height: 786px;
     width: 100%;
-    background:url('/images/testmonials_bg.png');
+    background:url('images/testmonials_bg.png');
     background-repeat:no-repeat;
     background-position: center;
     background-size:cover ;
@@ -364,7 +364,7 @@ nav .right_nav{
     justify-content: space-between;
     padding: 50px;
     flex-direction: column;
-    background:url(/images/pricing_bg.png) ;
+    background:url(images/pricing_bg.png) ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
