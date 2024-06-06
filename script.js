@@ -23,15 +23,13 @@ document.addEventListener("DOMContentLoaded" , () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".links").forEach(item => {
-        item.addEventListener("click", () => {
-            document.querySelectorAll(".links").forEach(link => link.classList.remove('active'));
-            item.classList.add('active');
-        });
-    });
-
-
-});
+//document.addEventListener("DOMContentLoaded", () => {
+ //   document.querySelectorAll(".links").forEach(item => {
+   //     item.addEventListener("click", () => {
+     //       document.querySelectorAll(".links").forEach(link => link.classList.remove('active'));
+       //     item.classList.add('active');
+  //      });
+ //   });
+//});
 
 
